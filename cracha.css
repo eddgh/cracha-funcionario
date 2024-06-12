@@ -19,7 +19,10 @@
     width: 714px;
     margin: 0 auto;
     background-color: #ffffff;
-    /* box-shadow:0 0 10px 10px rgba(211, 226, 226, 0.63); */
+}
+
+.box-shadow {
+    box-shadow:0 0 36px 25px rgba(167, 230, 226, 0.63);
 }
 
 .principal {
@@ -38,24 +41,33 @@
 }
 
 .print {
-    background-color: #19897e;
-    display: flex;
+    background-color: #468c85;
+    display: none;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    width: 100px;
+    width: 95px;
+    height: 45px;
     margin: 0 auto;
     border-radius: 25px;
     cursor: default;
-    border: 6px solid white;
-    border-style:double;
+    border-color: transparent;
 }
 
-a {
-    text-decoration: none;
+button {
+    width: 90px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #3f8898;
+    border-radius: 5px;
     color: #ffffff;
     font-size: 16px;
-    font-weight:normal;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #5ea4b4;
+    box-shadow:0 0 36px 10px rgba(167, 230, 226, 0.63);
 }
 
 .box {
@@ -83,13 +95,6 @@ a {
     object-fit: contain;
     border: none;
 }
-
-/* .picture {
-    width: 35%;
-    object-fit: cover;
-    margin-left: 10px;
-    border: 1px solid rgb(147 140 140);
-} */
 
 .data {
     display: flex;
@@ -150,8 +155,6 @@ input {
   .picture {
     width: 117.55px;
     height: 140px;
-  /*   aspect-ratio: 4/5; */
-  /*   background: #ddd; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,17 +164,25 @@ input {
     font-family: sans-serif;
     transition: color 300ms ease-in-out, background 300ms ease-in-out;
     outline: none;
-  /*   overflow: hidden; */
   }
 
   .border {
     border: 1px dashed rgb(147 140 140);
   }
-  
+
   .picture:hover {
     color: #777;
     background: #ccc;
+    & > span {
+        color: white;
+      }
   }
+
+  /* .picture:hover {
+    & > span {
+      color: white;
+    }
+  } */
   
   .picture:active {
     border-color: turquoise;
@@ -187,16 +198,8 @@ input {
   
   .picture__img {
     max-width: 100%;
-  /*   min-height: 145px; */
-  /*   height: auto; */
    height: 145px;
    border: 1px solid rgb(147 140 140);
-  
-  /*   aspect-ratio: 4/5; */
-  /*   background: #ddd; */
-  /*   display: flex; */
-  /*   align-items: center; */
-  /*   justify-content: center; */
   }
 
   span {

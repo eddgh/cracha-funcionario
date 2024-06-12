@@ -1,7 +1,8 @@
 function printCard(){
     (function() {
-      var element = document.getElementById('principal');
-      var btnPrint = document.getElementById('print');
+      var element = document.getElementById("principal");
+      var btnPrint = document.getElementById("print");
+      var container = document.getElementById("card");
       
       var beforePrint = function() {
           console.log('Antes de imprimir...');
@@ -9,6 +10,7 @@ function printCard(){
           element.classList.remove("center");
           element.classList.add("margin");
           document.body.classList.remove("beauty");
+          container.classList.remove("box-shadow");
       };
   
       var afterPrint = function() {
@@ -17,6 +19,7 @@ function printCard(){
           element.classList.add("center");
           element.classList.remove("margin");
           document.body.classList.add("beauty");
+          container.classList.add("box-shadow");
       };
   
       if (window.matchMedia) {
