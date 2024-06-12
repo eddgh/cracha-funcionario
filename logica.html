@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Storage getItem() Method</h1>
+
+<p>This example demonstrates how to use the getItem() method to get the value of a specified local storage item.</p>
+
+<h2>Missing localStorage items?</h2>
+
+<p>Since you might not have the specified item stored in your local storage, we have added a script that creates it for you.</p>
+
+<button onclick="createItem()">Create local storage item</button>
+
+<h2>Get the value of the local storage item named "mytime"</h2>
+
+<p>Click the button to get the item value:</p>
+
+<button onclick="myFunction()">Get the item value</button>
+
+<h3>Nome</h3>
+<p id="name"></p>
+<h3>Cargo</h3>
+<p id="occupation"></p>
+
+<script>
+
+function createItem() {
+  localStorage.name = 'EDMUNDO BATISTA';
+  localStorage.occupation = 'TÉCNICO DE TI'
+}
+
+function myFunction() {
+  var name = localStorage.getItem("name");
+  document.getElementById("name").innerHTML = name;
+   var occupation = localStorage.getItem("occupation");
+  document.getElementById("occupation").innerHTML = occupation;
+}
+
+</script>
+</body>
+</html>

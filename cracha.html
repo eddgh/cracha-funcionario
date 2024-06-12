@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crachá de Funcionário</title>
+    <link rel="stylesheet" href="cracha.css" type="text/css" />
+    <script defer src="./cracha.js" type="text/javascript"></script>
+  </head>
+  <body class="beauty">
+    <main id="principal" class="principal center">
+      <div class="container" id="card">
+        <div class="box screen">
+          <div class="imgs">
+            <img
+              class="logo"
+              src="./img/logo-Clinica-Pura-v2.jpg"
+              alt="Logo da empresa"
+            />
+            <label onclick="removeDashed()" id="label__picture" class="picture border" for="picture__input" tabindex="0">
+              <span class="picture__image"></span>
+            </label>
+            <input type="file" name="picture__input" id="picture__input" />
+          </div>
+          <div class="data">
+            <input
+              autocomplete="off"
+              type="text"
+              id="nome"
+              class="name"
+              title="digite o nome"
+              placeholder="digite o nome"
+            />
+            <input
+              autocomplete="off"
+              type="text"
+              id="profissao"
+              class="occupation"
+              title="digite a profissão"
+              placeholder="digite a profissão"
+            />
+          </div>
+        </div>
+        <div class="box screen"></div>
+      </div>
+      <div id="print" onclick="printCard()" class="print">
+        <a id="">Imprimir</a>
+      </div>
+    </main>
+  </body>
+</html>

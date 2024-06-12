@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cachá de Funcionário</title>
+        <link rel="stylesheet" href="cracha.css" type="text/css">
+    </head>
+    <body>
+        <div class="container center" id="card">
+            <div class="box">
+                <div class="imgs">
+                    <img class="logo" src="./img/logo-Clinica-Pura-v2.jpg" alt="Logo da empresa">
+
+                    <img class="picture" src="./img/fun03.png" alt="Foto do funcionário">
+                    
+                </div>
+                <div class="data">
+                    <div class="content name" id="name">
+                        <input type="text" title="digite o nome">
+                    </div>
+                    <div class="content occupation" id="occupation">
+                        <input type="text" title="digite a profissão">
+                    </div>
+                </div>
+            </div>
+            <div class="box"></div>
+        </div>
+        <div id="print" class="container print">
+            <a id="print" href="" onclick=printCard()>Imprimir</a>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function printCard (){
+            var element = document.getElementById('card');
+            element.classList.toggle("center");
+            element.classList.toggle("margin");
+
+            var btn = document.getElementById('print');
+            btn.classList.toggle("hide");
+
+            print();
+        }
+    </script>
+</html>
