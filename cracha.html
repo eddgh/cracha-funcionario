@@ -17,7 +17,12 @@
               src="./img/logo-Clinica-Pura-v2.jpg"
               alt="Logo da empresa"
             />
-            <label onclick="removeDashed()" id="label__picture" class="picture border" for="picture__input" tabindex="0">
+            <label
+              id="label__picture"
+              class="picture"
+              for="picture__input"
+              tabindex="0"
+            >
               <span class="picture__image"></span>
             </label>
             <input type="file" name="picture__input" id="picture__input" />
@@ -28,22 +33,23 @@
               type="text"
               id="nome"
               class="name"
-              title="digite o nome"
-              placeholder="digite o nome"
+              title="Digite o nome"
+              placeholder="Nome do funcionário"
             />
             <input
               autocomplete="off"
               type="text"
               id="profissao"
               class="occupation"
-              title="digite a profissão"
-              placeholder="digite a profissão"
+              title="Digite o cargo"
+              placeholder="Cargo do funcionário"
             />
           </div>
         </div>
-        <div class="box screen"></div>
+        <div class="box screen">          
+        </div>
       </div>
-    <button onclick="printCard()" id="print">Imprimir</button>
+      <button onclick="printCard()" id="print">Imprimir</button>
     </main>
   </body>
 </html>
